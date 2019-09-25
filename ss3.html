@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spend$Share</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///home/spit/Desktop/s$s/layout1.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    
+  </style>
+</head>
+
+<script type="text/javascript">
+window.onload = function()
+{
+  var username = getCookie('username');
+  var span = document.getElementById('cookieSpan');
+  span.innerHTML="Welcome "+username;
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=");
+  if (c_start!=-1)
+    {
+    c_start=c_start + c_name.length+1;
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length;
+    return unescape(document.cookie.substring(c_start,c_end));
+    }
+  }
+return "";
+}
+</script>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="ss.jpg" style="width:40px;height:35px;">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+
+        <a href="file:///home/spit/Desktop/s$s/ss3.html">Home
+
+        </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p>
+    <div style="  background-color:#EEFF41">
+      <a href="file:///home/spit/Desktop/s$s/ss3.html">DASHBOARD</a></p>
+      </div>
+     <p>
+      <div style="  background-color:#C6FF00 ">
+        <ul>
+        <a href="file:///home/spit/Desktop/s$s/ss4.html">GROUPS</a>
+     
+        <li>group 1</li>
+         <li>group 2</li>
+          <li>group 3</li>
+        </ul>
+
+      </div>
+      </p>
+      <p>
+         
+    <div style="  background-color:#AEEA00 ">
+        <ul>
+        <a href="file:///home/spit/Desktop/s$s/ss5.html">FRIENDS</a>
+     
+        <li>friend 1</li>
+        <li>friend 2</li>
+        <li>friend 3</li>
+        </ul>
+
+      </div>
+      </p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+     <span id="cookieSpan"></span>
+  
+      <hr>
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        
+      </div>
+      <div class="well">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>

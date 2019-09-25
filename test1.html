@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spend$Share</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///home/spit/Desktop/s$s/layout1.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function test() {
+      var name = document.getElementById("name").value;
+      var amts = document.getElementById("amt").value;
+      var t  = document.getElementById("addAfter");
+      t.append(name+"\t"+amts + "\n");
+      return false;
+    }
+  </script>
+</head>
+
+<body>
+	<form onsubmit="return test()">
+		 <fieldset>
+		      <label>Group Name:</label>
+		     
+		      <input type="text" id="name" placeholder="Enter Group Name" autocomplete="off">
+		        <br>
+		      <label>Amount:</label>
+		      <input type="number" id="amt" placeholder="Enter Amount" required autocomplete="off">
+		        <br>
+		      <button type = "submit" id="btn2">ADD</button>
+		      <p> NAME</p>
+		      <ol id = "addAfter">
+		      </ol>
+  		</fieldset>	
+	</form>
+</body>
